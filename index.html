@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Timbre</title>
+</head>
+<body>
+  <script>
+    fetch("https://ntfy.sh/TimbreDeCharlieflin", {
+      method: "POST",
+      body: "🔔 ¡Alguien está en la puerta!"
+    }).finally(() => {
+      window.location.replace("https://ntfy.sh/TimbreDeCharlieflin");
+    });
+  </script>
+</body>
+</html>
